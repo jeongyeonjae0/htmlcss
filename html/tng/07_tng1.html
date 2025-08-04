@@ -17,26 +17,26 @@
           </li>
         <li> 
         <label for="email">이메일</label>
-        <input type="text" name="email" id="email"> 
+        <input type="text" name="email" id="email" required> 
         </li>
         <li>
           <label for="password">비밀번호</label> 
           <input type="password" name="password" id="password" placeholder="문자와 숫자, 특수 기호 포함">
           </li> 
         <li>
-          <label for="password check">비밀번호 확인</label>
-          <input text="password check" name="password check" id="password check">
+          <label for="password">비밀번호 확인</label>
+          <input type="password" name="password" id="password">
           </li> 
         <li>
           <label for="">가입 경로</label>
-          <select name="기타" id="기타">
+          <select name="etc" id="etc">
             <option value="0">기타</option> 
             <option value="1">친구</option>
           </select>
          </li> 
         <li>
-          <label for="">메모</label>
-           <textarea name="" id="" cols="30" rows="10">남길 말씀이 있다면 여기에</textarea>
+          <label for="meno">메모</label>
+           <textarea name="meno" id="meno" cols="30" rows="10" placeholder="남길 말씀이 있다면 여기에"></textarea>
         </li>
       </ul>
     </fieldset>
@@ -44,11 +44,11 @@
       <legend>이벤트와 새로운 소식</legend>
       <input type="radio" name="mail" id="mail">
       <label for="mail">메일 수신</label>
-      <input type="radio" name="not mail" id="not mail" checked>
+      <input type="radio" name="mail" id="not mail" checked>
       <label for="not mail">메일 수신 안 함 </label>
     </fieldset> 
     <button type="sumbit">가입하기</button>
-    <button type="sumnit">취소</button> 
+    <button type="reset">취소</button> 
   </form>
 </body>
 </html>
