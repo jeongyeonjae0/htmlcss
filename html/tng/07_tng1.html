@@ -12,12 +12,16 @@
       <legend>사용자 정보</legend>
       <ul>
         <li>
-          <label for="iad">아이디</label>
-          <input type="text" name="iad" id="iad" placeholder="4자 ~ 10자 사이, 공백없이" > 
+          <label for="account">아이디</label>
+          <input type="text" 
+            name="account" 
+            id="account" 
+            placeholder="4자 ~ 10자 사이, 공백없이" 
+           > 
           </li>
         <li> 
         <label for="email">이메일</label>
-        <input type="text" name="email" id="email" required> 
+        <input type="email" name="email" id="email" required> 
         </li>
         <li>
           <label for="password">비밀번호</label> 
@@ -25,13 +29,13 @@
           </li> 
         <li>
           <label for="password">비밀번호 확인</label>
-          <input type="password" name="password" id="password">
+          <input type="password" name="passwordCheck" id="password">
           </li> 
         <li>
-          <label for="">가입 경로</label>
-          <select name="etc" id="etc">
-            <option value="0">기타</option> 
-            <option value="1">친구</option>
+          <label for="diraction">가입 경로</label>
+          <select name="diraction" id="diraction">
+            <option value="etc">기타</option> 
+            <option value="suggest">추천</option>
           </select>
          </li> 
         <li>
@@ -41,14 +45,17 @@
       </ul>
     </fieldset>
     <fieldset>
-      <legend>이벤트와 새로운 소식</legend>
-      <input type="radio" name="mail" id="mail">
-      <label for="mail">메일 수신</label>
-      <input type="radio" name="mail" id="not mail" checked>
-      <label for="not mail">메일 수신 안 함 </label>
+     <legend>이벤트와 새로운 소식</legend> 
+     <input type="radio" name="agreeFlg" id="agreeFlgTrue" value="1">
+     <label for="agreeFlgTrue">메일 수신</label> 
+     <input type="radio" name="agreeFlg" id="agreeFlgFalse" value="0" checked>
+     <label for="agreeFlgFalse">메일 수신 안 함</label> 
     </fieldset> 
     <button type="sumbit">가입하기</button>
     <button type="reset">취소</button> 
-  </form>
-</body>
+    </form> 
+    <!-- 스네이크 기법 : 단어와 단어 사이에 '_'로 연결, user_email  --> 
+    <!-- 카멜 기법 : 연결되는 단어의 첫글자를 대문자로 작성, userEmail --> 
+
+</body> 
 </html>
