@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #000000;
+  padding: 20px;
+}
+
+h1 {
+  color: #f0f8ff;
+  margin-bottom: 60px;
+}
+
+.header-info {
+  color: #ffa500;
+}
+
+/* main */ 
+.main-title {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #000000;
+  color: #f0f8ff;
+} 
+
+.main-box-base {
+  padding: 20px;
+  border: 1px solid #6d6d6d;
+  text-align: center;
+}
+
+/* .main-contents {
+  border: 1px solid #6d6d6d;
+}
+.main-counsel {
+  border: 1px solid #6d6d6d;
+} */
+
+/* 모듈화(추상화) : 중복된 속성들을 하나에 뭉쳐서 뺀다 */
+
+.main-sub-title {
+  color: red;
+  margin-bottom: 20px;
+}
+.main-word-highlight {
+  color: #0000ff;
+}
+
+.main-contents-big-bold {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.main-contets-margin-bottom {
+  margin-bottom: 20px;
+}
