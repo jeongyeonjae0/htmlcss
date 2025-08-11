@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11_tng</title>
+  <link rel="stylesheet" href="../tng/11_tng.css">
+</head>
+<body>
+  <form action="">
+    <fieldset class="back-header">
+      <legend class="header">l want You!</legend>
+      <label for="account" class="required-sign">이름</label>
+      <input type="text" name="account" id="account" required>
+      <br>
+      <label for="age" class="required-sign">나이</label>
+      <input type="number" min="20" required>
+      <br> 
+      <label for="gender" class="required-sign">성별</label>
+      <input type="radio" name="gender" id="man">
+      <label for="gender">남자</label>
+      <input type="radio" name="gender" id="woman">
+      <label for="gender">여자</label>
+      <br>
+      <label for="request" style="vertical-align: top;">요청사항</label>
+      <textarea class= "request" name="" id="request" style="vertical-align: middle;" cols="20" rows="10"
+      placeholder="요청 사항 입력"></textarea>
+      <br>
+      <button type="submit">보내기</button>
+    </fieldset>
+  </form>
+</body>
+</html>

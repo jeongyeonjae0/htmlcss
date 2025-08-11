@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.back-header {
+  width: 500;
+  height: 400;
+  background-position: 300;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url(../../img/rabbit.jpg)
+}
+
+.header {
+  color: #f749f7;
+}
+
+.required-sign::before {
+  content: '*';
+  color: red;
+}
+
+input:focus {
+  outline: none;
+  border: 3px solid red;
+}
+
+input:checked + label {
+  color: red;
+}
+
+.request:focus {
+  outline: none;
+  border: 3px solid red;
+}

@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+/* header */
+.fieldset-bg-img {
+  background-image: url('../../img/linux.png');
+  background-size: 400px 300px;
+  background-repeat: no-repeat;
+}
+
+.legend-title {
+  color: #ff00ff;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+/* main */
+.required-sign::before {
+  content: '*';
+  color: red;
+}
+
+.input-box {
+  margin-bottom: 10px;
+}
+
+.txa-request-memo {
+  width: 200px;
+  height: 120px;
+}
+
+label {
+  vertical-align: top;
+}
+
+input, textarea {
+  background-color: transparent;
+}
+
+.focus-border:focus {
+  border: 3px solid red;
+  outline: none;
+}
+
+.chk-color:checked + label {
+  color: red;
+}
+
+/* footer */ 
+.btn-submit {
+  position: relative;
+}
+
+.btn-submit:hover::after {
+  content: '내용을 다시 한 번 확인해 주세요.';
+  position: absolute;
+  width: 300px;
+  font-size: 20px;
+  background-color: black;
+  color: azure;
+  top: 0;
+  left: 60px;
+}
